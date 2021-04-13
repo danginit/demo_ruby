@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2021_04_12_131854) do
 
-  create_table "demos", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "demos", force: :cascade do |t|
     t.string "fname"
     t.string "lname"
     t.string "email"
@@ -22,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_04_12_131854) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.string "password_digest"
