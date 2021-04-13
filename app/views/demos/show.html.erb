@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @demo.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @demo.lname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @demo.email %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @demo.mobile %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @demo.address %>
+</p>
+
+<%= link_to 'Edit', edit_demo_path(@demo) %> |
+<%= link_to 'Back', demos_path %>
