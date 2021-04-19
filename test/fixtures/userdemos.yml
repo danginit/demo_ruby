@@ -2,12 +2,8 @@
 
 one:
   name: MyString
-  mobile: 
   email: MyString
-  password_digest: <%= BCrypt::Password.create('secret') %>
 
 two:
   name: MyString
-  mobile: 
   email: MyString
-  password_digest: <%= BCrypt::Password.create('secret') %>
